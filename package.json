@@ -8,12 +8,20 @@
     "start": "react-native start",
     "r": "cd android && gradlew clean && gradlew assembleRelease && cd ..",
     "aab": "cd android && gradlew clean && gradlew bundleRelease && cd ..",
+    "android:staging": "react-native run-android --variant=staging",
+    "android:staging-release": "react-native run-android --variant=stagingrelease",
+    "android:dev": "react-native run-android --variant=developmentdebug",
+    "android:dev-release": "react-native run-android --variant=developmentrelease",
+    "android:prod": "react-native run-android --variant=productiondebug",
+    "android:prod-release": "react-native run-android --variant=productionrelease",
+    "android-run-debug-staging": "react-native run-android --variant=staging --appId 'com.reactnative_ver22.stg'",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "react": "17.0.2",
-    "react-native": "0.66.4"
+    "react-native": "0.66.4",
+    "react-native-config": "^1.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
